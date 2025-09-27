@@ -1,6 +1,7 @@
 const path = require('path')
 
 export default {
+  target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Bio-FAIR 2k25 | National Level Technical Event',
