@@ -42,7 +42,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<!-- <style lang="scss" scoped>
 .content {
   position: absolute;
   top: 42vh;
@@ -112,5 +112,43 @@ export default {
       transform: scale(1.4);
     }
   }
+}
+</style> -->
+<style lang="scss" scoped>
+.content {
+  // Make the content section take up the full viewport height
+  height: 100vh;
+
+  // Use flexbox to vertically center the text content
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  // Keep the original left padding
+  padding-left: 10vw;
+
+  // Ensure this content appears above the background canvas
+  position: relative;
+  z-index: 2;
+
+  &__upperText {
+    font-size: xx-large;
+    font-weight: 900;
+  }
+
+  &__title {
+    margin: 0px;
+    font-family: var(--font-family-serif);
+    font-size: 5em;
+    text-shadow: 0 0 20px #1242bd;
+    span {
+      background: linear-gradient(135deg, #1954ec, #293583);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  // ... (the rest of your styles for __text and __scroll can remain if needed)
 }
 </style>

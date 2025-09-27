@@ -1,9 +1,14 @@
 <template>
   <div>
-    <!-- <Header /> -->
+    <Header />
     <Content />
+    <Countdown />
     <About />
-    <!-- <Footer /> -->
+    <Guests />
+    <RegisterCTA />
+    <Sponsors />
+    <!-- <Timeline /> -->
+    <Footer />
   </div>
 </template>
 
@@ -60,9 +65,14 @@ export default {
   },
 }
 </script> -->
-<script>
+<!-- <script>
 // import WebGL from '~/webgl'
 
+export default {
+  name: 'IndexPage',
+}
+</script> -->
+<script>
 export default {
   name: 'IndexPage',
 }

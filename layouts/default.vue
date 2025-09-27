@@ -1,11 +1,8 @@
 <template>
   <div>
-    <!-- <Loader /> -->
-    <Header />
+    <Loader />
+
     <Nuxt style="position: relative; z-index: 1" />
-    <!-- <About /> -->
-    <!-- <Nuxt /> -->
-    <Footer />
 
     <canvas id="canvasWebgl" />
   </div>

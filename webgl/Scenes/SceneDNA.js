@@ -8,7 +8,7 @@ import {
   Points,
   BufferGeometry,
 } from 'three'
-import { lerp } from '../Utils/Lerp.js'
+// import { lerp } from '../Utils/Lerp.js'
 import Raf from '../Utils/Raf.js'
 
 const vertexShader = `
@@ -295,15 +295,24 @@ export default class SceneDNA {
     this.scene.rotation.z = -0.16
   }
 
-  update(time) {
-    this.rotation = lerp(this.rotation, this.rotationTarget, 0.1)
-    const rotation = (time + this.rotation) * 0.3
-    this.instance.rotation.y = rotation
+  // update(time) {
+  //   this.rotation = lerp(this.rotation, this.rotationTarget, 0.1)
+  //   const rotation = (time + this.rotation) * 0.3
+  //   this.instance.rotation.y = rotation
 
+  //   this.DNA.material.uniforms.uTime.value = time * 0.3
+  //   this.particles.material.uniforms.uTime.value = time * 0.1
+
+  //   if (this.scrollEL) this.scrollEL.style.transform = `rotate(${rotation}rad)`
+  // }
+  update(time) {
+    // We'll use the 'time' parameter for a constant rotation.
+    // The 0.3 multiplier controls the speed; feel free to adjust it.
+    this.instance.rotation.y = time * 0.3
+
+    // These lines update the shaders for the DNA and background particles
     this.DNA.material.uniforms.uTime.value = time * 0.3
     this.particles.material.uniforms.uTime.value = time * 0.1
-
-    if (this.scrollEL) this.scrollEL.style.transform = `rotate(${rotation}rad)`
   }
 
   // add scrollEL
