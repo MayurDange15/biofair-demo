@@ -200,7 +200,7 @@ export default {
         Tulsiramji Gaikwad-Patil College of Engineering and Technology, Nagpur
       </p>
       <p>Nagpur, Maharashtra, India</p>
-      <p>Email: biotech@tgpcet.com | Phone: +91 9096899826</p>
+      <p>Email: hod.bt@tgpcet.com | Phone: +91 9096899826</p>
     </div>
 
     <div class="footer__bottom">
