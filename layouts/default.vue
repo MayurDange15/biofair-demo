@@ -1,8 +1,11 @@
 <template>
   <div>
     <!-- <Loader /> -->
-
+    <Header />
     <Nuxt style="position: relative; z-index: 1" />
+    <!-- <About /> -->
+    <!-- <Nuxt /> -->
+    <Footer />
 
     <canvas id="canvasWebgl" />
   </div>
@@ -27,6 +30,11 @@ export default {
   },
 }
 </script>
+<!-- <script>
+export default {
+  name: 'LayoutDefault',
+}
+</script> -->
 
 <style>
 .fade-enter-active,

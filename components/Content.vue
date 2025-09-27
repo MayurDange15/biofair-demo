@@ -18,7 +18,7 @@
   </div>
 </template>
 
-<script>
+<!-- <script>
 import WebGL from '~/webgl'
 
 export default {
@@ -34,6 +34,11 @@ export default {
       DNA.addScrollElement(scroll)
     },
   },
+}
+</script> -->
+<script>
+export default {
+  name: 'TextsContent',
 }
 </script>
 

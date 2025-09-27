@@ -1,12 +1,13 @@
 <template>
   <div>
-    <Header />
+    <!-- <Header /> -->
     <Content />
-    <Footer />
+    <About />
+    <!-- <Footer /> -->
   </div>
 </template>
 
-<script>
+<!-- <script>
 import WebGL from '~/webgl'
 
 export default {
@@ -29,5 +30,40 @@ export default {
       window.addEventListener('wheel', this.handleWheel)
     },
   },
+}
+</script> -->
+<!-- <script>
+import WebGL from '~/webgl'
+
+export default {
+  name: 'IndexPage',
+  mounted() {
+    this.DNA = new WebGL().DNA
+    this.scrollPosition = 0
+
+    this.initScroll()
+  },
+  beforeDestroy() {
+    window.removeEventListener('wheel', this.handleWheel)
+  },
+  methods: {
+    initScroll() {
+      this.handleWheel = (ev) => {
+        ev.preventDefault() // stop actual page scroll
+        const delta = ev.deltaY || -ev.wheelDelta
+        this.scrollPosition += delta * 0.01
+        this.DNA.rotationTarget = this.scrollPosition
+      }
+
+      window.addEventListener('wheel', this.handleWheel, { passive: false })
+    },
+  },
+}
+</script> -->
+<script>
+// import WebGL from '~/webgl'
+
+export default {
+  name: 'IndexPage',
 }
 </script>
